@@ -1,5 +1,5 @@
 class Server:
-    __current_ip = 0
+    __current_ip = 1
 
     def __init__(self):
         # Отвечает за присвоение ip серверу
