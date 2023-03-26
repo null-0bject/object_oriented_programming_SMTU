@@ -23,7 +23,6 @@ if __name__ == '__main__':
     router.send_data()
     msg_lst_from = sv_from.get_data()
     msg_lst_to = sv_to.get_data()
-    print(msg_lst_from)
     assert len(router.get_data()) == 0, "после отправки сообщений буфер в роутере должен очищаться"
     assert len(sv_from.get_buffer()) == 0, "после получения сообщений буфер сервера должен очищаться"
     assert len(msg_lst_to) == 2, "метод get_data вернул неверное число пакетов"
