@@ -1,5 +1,6 @@
 class VersionManager:
     # null.object
+
     def __init__(self, version=''):
         self.versioncontrol = []
         # --------------
