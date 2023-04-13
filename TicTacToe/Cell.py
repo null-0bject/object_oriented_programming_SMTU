@@ -2,9 +2,7 @@
 
 class Cell:
 
-    def __init__(self, row=None, column=None):
-        self.row = row
-        self.column = column
+    def __init__(self):
         self.value = 0
 
     def __bool__(self):
@@ -16,6 +14,5 @@ class Cell:
     def __eq__(self, other):
         return self.value == other
 
-
-
-
+    def __int__(self):
+        return self.value
